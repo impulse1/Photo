@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+<title>Jacob</title>
+<link href="style.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="javascript/jquery.easing.1.3.js"></script>
+<script src="javascript/jquery.animate-enhanced.min.js"></script>
+<script src="javascript/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
+<link href="style/font-awesome-4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+
+	<div id="slider">
+		<ul id="connect">
+			<li>
+			  <a href="#">Home</a>
+			</li>
+			<li>
+				<a href="#">Portfolio</a>
+			</li>
+			<li>
+				<a href="#">Blog</a>
+			</li>
+			<li>
+				<a href="#">About</a>
+			</li>
+		  </ul>
+		<div id="slides"><!--////////////////////////Slides////////////////////////////////////////////////////
+		///////////////////////////////////////-->
+			<ul class="slides-container">
+			  <li>
+				<img src="images/1.jpg" alt="">
+				<div class="container">
+				  <h1 class="title">Jacob Skoglund <span></span></h1>
+					<div class="contrast">
+					</div>
+				  <h3>
+				  <a href="#">Fashion Photographer</a>
+				  </h3>
+				</div>
+			  </li>
+			  <li>
+				<img src="images/3.jpg" alt="">
+				<div class="container">
+				  <h1><a href="http://jacobsphotobooth.tumblr.com/">Blog</a></h1>
+				  <div class="contrast">
+				  </div>
+				</div>
+			  </li>
+			  <li>
+				<img src="images/4.jpg" alt="">
+				<div class="container">
+				  <h1>About</h1>
+				  <div class="contrast">
+					<p>Still learning about this large world. </p>
+					<p>Feel free to get in touch about anything. Inquiries, questions, etc.</p>
+					<p>contact : jacobskoglundphotography@aol.com</p>
+				  </div>
+				</div>
+			  </li>
+			 
+			</ul>
+				<nav class="slides-navigation">
+				  <a href="#" class="next">
+					<i class="icon-chevron-right"></i>
+				  </a>
+				  <a href="#" class="prev">
+					<i class="icon-chevron-left"></i>
+				  </a>
+				</nav>
+		</div>
+		<!--////////////////////////Slides////////////////////////////////////////////////////
+		///////////////////////////////////////-->
+	</div>
+	
+		
+		  <script>
+			$(document).ready(function($) {
+				$('#slides').superslides({
+					hashchange: false,
+					pagination: true,
+					play: 7000,
+					animation: 'fade',
+					animation_speed: 1500
+				});
+			 //$(function() {
+			  //$('#slides').superslides({
+				//inherit_height_from: '#slider'
+			  //});	
+				
+			});
+		  </script>
+</body>
+</html>
